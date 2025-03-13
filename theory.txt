@@ -5,3 +5,15 @@ A ideia por de trás do paradigma orientado a bjetos é que queremos ser capazes
 Classe é um conceito muito importante em POO, a classe é um de construção da progamação orientada objetos , e uma classe é basicamente um tipo de dado definido pelo usuario e para ser capaz de entender o que são tipos de dados definidos pelo usuario, você primeiro precisa entender o que são tipos de dados predifinidos, o que são tipos de dados integrados, então tipos de dados como: int, float, double, char e outros.
 
 Uma classe é um tipo de dados um pouco mais complexo!!!
+
+Construtor é um tipo especial de método que e invocado cada vez que um objeto de uma classe é criada.
+
+Construtor padrão é um termo para descrever um construtor que é gerado automaticamente pelo seu computador, então caso você não crie um construtor próprio, seu compilador vai automaticamente lhe dar um construtor padrão.
+
+3 regras para criar um construtor:
+
+1 -> Following;
+2 -> Mesmo nome da classe a que pertence;
+3 -> Deve ser público.
+
+Encapsulamento:  A ideia de Encapsulamento é a ideia de agrupar ou amarrar dados e métodos que operam nesses dados para que sejam agrupados dentro de uma classe. Fazemos isso com o propósito de impedir que qualquer pessoa ou coisa fora da nossa classe possa acessar direitamente nossos dados com eles e modificá-los.
