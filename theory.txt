@@ -17,3 +17,5 @@ Construtor padrão é um termo para descrever um construtor que é gerado automa
 3 -> Deve ser público.
 
 Encapsulamento:  A ideia de Encapsulamento é a ideia de agrupar ou amarrar dados e métodos que operam nesses dados para que sejam agrupados dentro de uma classe. Fazemos isso com o propósito de impedir que qualquer pessoa ou coisa fora da nossa classe possa acessar direitamente nossos dados com eles e modificá-los.
+
+Abstração: Significa esconder coisas complexas por trás de um procedimento que faz essas coisas paracerem simples.
