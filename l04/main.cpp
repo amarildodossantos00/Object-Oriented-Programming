@@ -1,5 +1,5 @@
 #include <iostream> 
-// Heranca
+// Polimorfismo
 
 class   AbstractionEmploye{
 	//metodo obrigatorio!
@@ -52,6 +52,9 @@ public:
 		else
 			std::cout << Name << ", sorry NO promotion for you!" << std::endl;
 	}
+    virtual void    Work(){
+        std::cout << Name << " is checking email, task backlog, performing tasks..." << std::endl;
+    }
 };
 
 class	Developer:public Employe{
@@ -65,6 +68,9 @@ public:
 	void	FixBug(){
 		std::cout << Name << " fixed bug using " << FvrtProgLang << std::endl;
 	}
+    void    Work(){
+        std::cout << Name << " is writing " << FvrtProgLang << " code" << std::endl;
+    }
 };
 
 class	Teacher:public Employe {
@@ -78,16 +84,19 @@ public:
 	{
 		Subject = subject;
 	}
+    void    Work(){
+        std::cout << Name << " is teaching " << Subject << std::endl;
+    }
 };
 
 int main() 
 {
-    Employe employe1 = Employe("Candy", "Segredo", 19);
-    Employe employe2 = Employe("#####", "Segredo", 39);
 	Developer dvlp = Developer("COD ALIEN", "YouTube", 19, "Python");
-	dvlp.FixBug();
-	dvlp.AskForPromotion();
 	Teacher tch = Teacher("Capassola", "Girassol", 36, "SEAC");
-	tch.PrepareLesson();
-	tch.AskForPromotion();
+
+    Employe* e1 = &dvlp;
+    Employe* e2 = &tch;
+
+    e1->Work();
+    e2->Work();
 }
